@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To My Appi 🌙</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0b0c2a, #1a1249);
+      color: #f0e9ff;
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #ffeeba;
+      text-shadow: 0 0 10px #fff3cd;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px auto;
+      max-width: 750px;
+      line-height: 1.7;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .photo img {
+      margin-top: 30px;
+      max-width: 300px;
+      border-radius: 15px;
+      border: 3px solid #ffd;
+      box-shadow: 0 0 25px #d4c4ff;
+      transition: 0.4s ease;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .photo img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px #fff;
+    }
+    .music {
+      margin-top: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 1.1em;
+      color: #c0aaff;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    .moon {
+      font-size: 5em;
+      margin-bottom: 20px;
+      animation: pulse 3s infinite;
+      color: #fffacd;
+      text-shadow: 0 0 25px #fffacd;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: starFall linear infinite;
+    }
+    @keyframes starFall {
+      from { transform: translateY(-10px); opacity: 1; }
+      to { transform: translateY(100vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="moon">🌙</div>
+  <h1>To MY Appi</h1>
+
+  <p>
+ <h3> Assalamu Alaikum, Appi! 🤍 </h3><br> 
+
+Today, I wish to be appreciative of my wonderful elder sister who has been a blessing in my life.<br>
+Thank you doesn’t seem enough for what you have done for me.<br>
+ <b>Guiding, loving, and supporting me every step of the way.</b> <br>
+ Your strength, wisdom, and cherished heart has inspired me in more ways than one, and goes without saying, I am glad to have you as my sister. 🐣 <br> 
+Wishing you happiness, contentment and all the blessings that you so truly deserve. I hope this year is very special.<br>
+ You should never stop wishing because every little dream is bound to come true and your heart deserves to be filled with endless love and joy.<br>  
+ By every definition, you do uplift the planet because of the sweet soul you are. 😇  <br>
+May Allah bestow you a long life filled with good health and always remain happy. You can count on me for anything, whether it is in times of joy or during hardships, I am always here for you.<br>
+ <b>Love you lots, Appi.</b> 😘💗  <br>
+<B>Wish you the best on your special day today! Hoping it's everything you've wished for and even more🙈🥳🎈.</B>
+
+  </p>
+
+  <div class="photo">
+    <img src="https://i.imgur.com/d2Arvbt.jpeg" alt="Appi's Photo">
+    <p style="font-size: 0.9em;">(My beautiful Appi 💖)</p>
+  </div>
+
+  <div class="music">
+    <audio autoplay loop>
+  <source src="https://files.catbox.moe/2e0byw.mp3" type="audio/mpeg">
+</audio>
+    <p style="font-size: 0.9em;">
+  </div>
+
+  <div class="footer">
+    — Forever your little Brother, Mahim 🌒
+  </div>
+
+  <div class="stars" id="stars"></div>
+
+  <script>
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.animationDuration = 2 + Math.random() * 3 + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
